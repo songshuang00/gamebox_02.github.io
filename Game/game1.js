@@ -64,7 +64,7 @@ $(document).ready(function(){
             switch (event.which){
                 case 65:
                 {
-                  $(this.probeImage).animate({left:'1000px',},'slow',);
+                  $(this.probeImage).animate({left:'1000px',},'slow');
                   if ($(this.probeImage.x)<=20)
                       {
                        $(this.probeImage).stop();
@@ -72,7 +72,7 @@ $(document).ready(function(){
                 };
                 case 83:
                 {
-                  $(this.probeImage).animate({bottom:'1000px',},'slow',);
+                  $(this.probeImage).animate({bottom:'1000px',},'slow');
                   if ($(this.probeImage.y)>=730)
                       {
                        $(this.probeImage).stop();
@@ -80,7 +80,7 @@ $(document).ready(function(){
                 };
                 case 68:
                 {
-                  $(this.probeImage).animate({right:'1000px',},'slow',);
+                  $(this.probeImage).animate({right:'1000px',},'slow');
                   if ($(this.probeImage.x)>=530)
                       {
                        $(this.probeImage).stop();
@@ -88,7 +88,7 @@ $(document).ready(function(){
                 };
                 case 87:
                 {
-                  $(this.probeImage).animate({top:'1000px',},'slow',);
+                  $(this.probeImage).animate({top:'1000px',},'slow');
                   if ($(this.probeImage.y)<=20)
                       {
                        $(this.probeImage).stop();
@@ -103,7 +103,7 @@ $(document).ready(function(){
                      }
                   }));
                   
-                 $(this.bulletImage).animate({top:'1000px',},'fast',);
+                 $(this.bulletImage).animate({top:'1000px',},'fast');
                 };
                 default:
                     $(this.probeImage).stop();
@@ -126,8 +126,8 @@ $(document).ready(function(){
             
             var setIntervalFun1=null;
             setIntervalFun1=setInterval('addEnemy()',1000*5);
-            $(this.enemyImage).animate({bottom:'1000px',},'normal',);
-            $(this.enemyImage).animate({left:'1000px',},getRandom(2000)-getRandom(2000)+1,);
+            $(this.enemyImage).animate({bottom:'1000px',},'normal');
+            $(this.enemyImage).animate({left:'1000px',},(getRandom(1)-getRandom(1))*50);
             if(setIntervalFun1 != null){
                 clearInterval(setIntervalFun1);
             };
