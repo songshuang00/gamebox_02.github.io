@@ -27,7 +27,7 @@
     {% block scripts %}
     <script src="{{bootstrap_find_resource('jquery.js', cdn='jquery')}}"></script>
     <script src="{{bootstrap_find_resource('js/bootstrap.js', cdn='bootstrap')}}"></script>
-    <script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-0-6/esl.js"></script>
+    <script src="{{bootstrap_find_resource('js/zrender.js', cdn='zrender')}}"></script>
     {%- endblock scripts %}
     {%- endblock body %}
   </body>

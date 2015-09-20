@@ -62,10 +62,10 @@
         $(document).ready(function setFrame(){
             var choice=new $('.amenu').click(this.text());
                 if(choice='Game1'){
-                    $('#gcanvas').innerHTML='<script src="{{url_for("Game", filename="game1.js")}}">';
+                    $('#gcanvas').innerHTML='<script type="text/javascript" src="{{url_for("Game", filename="game1.js")}}">';
                 }
                 else if(choice='Game2'){
-                    $('#gcanvas').innerHTML='<script src="{{url_for("Game", filename="game2.js")}}">';
+                    $('#gcanvas').innerHTML='<script type="text/javascript" src="{{url_for("Game", filename="game1.js")}}">';
                 }
                 else if(choice='Music1'){
                     $('#mlist').innerHTML='http://music.163.com/outchain/player?type=2&id=34478639&auto=1&height=66';
